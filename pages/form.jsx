@@ -48,8 +48,8 @@ const Form = () => {
   };
 
   return (
-    <div className=" w-full h-full flex">
-      <div className="w-2/3 cont pt-24">
+    <div className=" w-full h-full md:flex">
+      <div className="w-full md:w-2/3 lg:px-24 px-5 pt-24">
         <p className="font-sol text-4xl">Let's Donate!</p>
         <form className="pt-9 pb-7" onSubmit={handleSubmit(onSubmitHandler)}>
           <p className="text-xs pl-4">{errors.name?.message}</p>
@@ -136,11 +136,11 @@ const Form = () => {
           </div>
         </form>
       </div>
-      <div className="w-1/3 bg-[#8CBEA3]">
-        <div className="w-full pr-24 pt-24">
+      <div className="w-full pb-10 md:w-1/3 bg-[#8CBEA3]">
+        <div className="w-full md:pr-5 lg:pr-24 pt-24">
           <Image src={Gambar1} alt="Gambar 1" className="rounded-r-xl" />
         </div>
-        <div className="w-full pr-24 pt-4">
+        <div className="w-full md:pr-5 lg:pr-24 pt-4">
           <Image src={Gambar1} alt="Gambar 1" className="rounded-r-xl" />
         </div>
       </div>
