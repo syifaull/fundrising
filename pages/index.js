@@ -8,6 +8,9 @@ import Logo1 from "../public/Group 1.png";
 import Logo2 from "../public/Group 2.png";
 import Logo3 from "../public/Group 3.png";
 import Logo from "../public/Logo-Char.png";
+import fb from "../public/🦆 icon _facebook_.png";
+import ig from "../public/🦆 icon _instagram_.png";
+import wa from "../public/🦆 icon _whatsapp_.png";
 
 export default function Home() {
   return (
@@ -137,6 +140,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* our story */}
       <div className="w-full px-20 py-28 grid grid-cols-2">
         <div>
@@ -158,24 +162,67 @@ export default function Home() {
           </p>
         </div>
         <div className="py-20 bg-[#DFBA47] ">
-          <div className="w-1/2 ">
-            <Image
-              alt="Gambar 1"
-              src={Gambar1}
-              className="rounded-xl"
-              priority
-            />
-          </div>
-          <div className="w-1/2 pt-3">
-            <Image
-              alt="Gambar 1"
-              src={Gambar1}
-              className="rounded-xl"
-              priority
-            />
+          <div>
+            <div className="w-96 pl-10">
+              <Image
+                alt="Gambar 1"
+                src={Gambar1}
+                className="rounded-xl"
+                priority
+              />
+            </div>
+            <div className="w-96 pt-3 pl-20">
+              <Image
+                alt="Gambar 1"
+                src={Gambar1}
+                className="rounded-xl"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
+
+      {/* part of us */}
+      <div className="w-full h-52 bg-[#CB654F] flex flex-col items-center">
+        <p className="font-sol text-4xl pt-10 pb-4">Ready to be part of US?</p>
+        <Link href="/form">
+          <Button text="Donate Now!" />
+        </Link>
+      </div>
+
+      {/* footer */}
+      <footer className="w-full h-72 flex">
+        <div className="w-1/3 pl-20 pt-28">
+          <Image src={Logo} alt="Logo Footer" width={150} />
+          <p>Let&apos;s be part of changes</p>
+        </div>
+        <div className="w-2/3 bg-[#D3B1A7]">
+          <div className="grid grid-cols-3 pt-12 px-20 text-white">
+            <div>
+              <p className="font-sol text-2xl">Join Us</p>
+              <p>Fundraiser</p>
+              <p>Event</p>
+              <p>Accomodation</p>
+            </div>
+            <div>
+              <p className="font-sol text-2xl">About</p>
+              <p>Our Story</p>
+              <p>Our Blog</p>
+              <p>Our Partner</p>
+              <p>Contact Us</p>
+            </div>
+            <div>
+              <p className="font-sol text-2xl">Socmed</p>
+              <div className="flex">
+                <Image src={ig} alt="instagram icon" className="mr-2" />
+                <Image src={fb} alt="facebook icon" className="mr-2" />
+                <Image src={wa} alt="whatsapp icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
