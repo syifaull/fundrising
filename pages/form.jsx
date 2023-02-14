@@ -32,7 +32,7 @@ const schema = yup.object().shape({
     .matches(/[\d]/, "Donation Amount must be number")
     .required()
     .label("Donation Amount"),
-  address: yup.string().matches(/[\D]/, "Address can't only use digit"),
+  address: yup.string().matches(/[\D]/, "Address cant only use digit"),
 });
 
 const Form = () => {
@@ -50,7 +50,7 @@ const Form = () => {
   return (
     <div className=" w-full h-full md:flex">
       <div className="w-full md:w-2/3 lg:px-24 px-5 pt-24">
-        <p className="font-sol text-4xl">Let's Donate!</p>
+        <p className="font-sol text-4xl">Let&apos;s Donate!</p>
         <form className="pt-9 pb-7" onSubmit={handleSubmit(onSubmitHandler)}>
           <p className="text-xs pl-4">{errors.name?.message}</p>
           <div className="w-full bg-[#F5F5F5] rounded-[35px] px-4 py-2 mb-3">
