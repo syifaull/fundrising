@@ -86,8 +86,8 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <div className="flex w-full">
-          <div className="w-1/2 pl-20 pt-32">
+        <div className="md:flex w-full">
+          <div className=" md:w-1/2 pl-5 md:pl-20 pt-32">
             <p className="font-sol text-4xl">Safe Our World,</p>
             <p className="font-sol text-4xl">Be Kind to Others</p>
             <p className="pt-2 pb-10">Let&apos;s be part of changes</p>
@@ -95,7 +95,7 @@ export default function Home() {
               <Button text="Donate Now!" />
             </Link>
           </div>
-          <div className="w-1/2 h-full bg-[#D3B1A7]">
+          <div className=" md:w-1/2 h-full bg-[#D3B1A7]">
             <div className="w-full pr-20 py-20 ">
               <Image
                 alt="Gambar 1"
@@ -110,8 +110,8 @@ export default function Home() {
 
       {/* blue section */}
       <div className="w-full h-52 bg-[#8CBEA3]">
-        <div className="grid grid-cols-3 pt-12">
-          <div className="flex justify-center">
+        <div className="grid grid-cols-3 md:pt-12">
+          <div className="md:flex justify-center">
             <div>
               <Image src={Logo1} alt={"logo - grup - 1"} />
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
               <p className="text-lg">Donations Received</p>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="md:flex justify-center">
             <div>
               <Image src={Logo2} alt={"logo - grup - 2"} />
             </div>
@@ -129,7 +129,7 @@ export default function Home() {
               <p className="text-lg">Active Campaign</p>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="md:flex justify-center">
             <div>
               <Image src={Logo3} alt={"logo - grup - 3"} />
             </div>
@@ -142,7 +142,7 @@ export default function Home() {
       </div>
 
       {/* our story */}
-      <div className="w-full px-20 py-28 grid grid-cols-2">
+      <div className="w-full px-5 py-10 md:px-20 md:py-28 md:grid md:grid-cols-2">
         <div>
           <p className="font-sol text-3xl">Our Story</p>
           <p className="pt-10 pr-20 pb-16">
@@ -163,7 +163,7 @@ export default function Home() {
         </div>
         <div className="py-20 bg-[#DFBA47] ">
           <div>
-            <div className="w-96 pl-10">
+            <div className="lg:w-96 lg:pl-10">
               <Image
                 alt="Gambar 1"
                 src={Gambar1}
@@ -171,7 +171,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="w-96 pt-3 pl-20">
+            <div className="lg:w-96 pt-3 lg:pl-20">
               <Image
                 alt="Gambar 1"
                 src={Gambar1}
@@ -185,19 +185,21 @@ export default function Home() {
 
       {/* part of us */}
       <div className="w-full h-52 bg-[#CB654F] flex flex-col items-center">
-        <p className="font-sol text-4xl pt-10 pb-4">Ready to be part of US?</p>
+        <p className="font-sol text-2xl md:text-4xl pt-10 pb-4">
+          Ready to be part of US?
+        </p>
         <Link href="/form">
           <Button text="Donate Now!" />
         </Link>
       </div>
 
       {/* footer */}
-      <footer className="w-full h-72 flex">
-        <div className="w-1/3 pl-20 pt-28">
+      <div className="w-full h-72 md:flex">
+        <div className="md:w-1/3 pl-20 pt-28">
           <Image src={Logo} alt="Logo Footer" width={150} />
           <p>Let&apos;s be part of changes</p>
         </div>
-        <div className="w-2/3 bg-[#D3B1A7]">
+        <div className="md:w-2/3 bg-[#D3B1A7]">
           <div className="grid grid-cols-3 pt-12 px-20 text-white">
             <div>
               <p className="font-sol text-2xl">Join Us</p>
@@ -222,7 +224,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
