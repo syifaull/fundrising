@@ -42,9 +42,9 @@ export default function Home() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
@@ -56,7 +56,7 @@ export default function Home() {
                 <li>
                   <a
                     href="#"
-                    class="block py-2 pl-3 pr-4 bg-[#DFBA47]rounded md:bg-transparent md:hover:text-[#DFBA47] md:p-0 "
+                    className="block py-2 pl-3 pr-4 bg-[#DFBA47]rounded md:bg-transparent md:hover:text-[#DFBA47] md:p-0 "
                     aria-current="page"
                   >
                     Home
