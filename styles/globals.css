@@ -11,12 +11,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #E3E1CB;
+  color: #322726
 }
 
-.cont {
+/* .cont {
   padding-left: 98px;
   padding-right: 98px;
-}
+} */
 
 /* a {
   color: inherit;

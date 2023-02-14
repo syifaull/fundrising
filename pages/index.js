@@ -1,4 +1,13 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Button from "../components/button";
+import Gambar1 from "../public/gambar2.jpg";
+import Logo1 from "../public/Group 1.png";
+import Logo2 from "../public/Group 2.png";
+import Logo3 from "../public/Group 3.png";
+import Logo from "../public/Logo-Char.png";
 
 export default function Home() {
   return (
@@ -7,7 +16,122 @@ export default function Home() {
         <title>Charitee</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
+      {/* home section */}
+      <div className="w-full min-h-min">
+        <nav className=" border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
+          <div className="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="/" className="flex items-center">
+              <div className="w-36">
+                <Image alt="Logo" src={Logo} />
+              </div>
+            </a>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 "
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              className="hidden w-full md:block md:w-auto"
+              id="navbar-default"
+            >
+              <ul className="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 bg-[#DFBA47]rounded md:bg-transparent md:hover:text-[#DFBA47] md:p-0 "
+                    aria-current="page"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DFBA47] md:p-0 "
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DFBA47] md:p-0 "
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div className="flex w-full">
+          <div className="w-1/2 pl-20 pt-32">
+            <p className="font-sol text-4xl">Safe Our World,</p>
+            <p className="font-sol text-4xl">Be Kind to Others</p>
+            <p className="pt-2 pb-10">Let's be part of changes</p>
+            <Link href="/form">
+              <Button text="Donate Now!" />
+            </Link>
+          </div>
+          <div className="w-1/2 h-full bg-[#D3B1A7]">
+            <div className="w-full pr-20 py-20 ">
+              <Image alt="Gambar 1" src={Gambar1} className="rounded-r-xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* blue section */}
+      <div className="w-full h-52 bg-[#8CBEA3]">
+        <div className="grid grid-cols-3 pt-12">
+          <div className="flex justify-center">
+            <div>
+              <Image src={Logo1} alt={"logo - grup - 1"} />
+            </div>
+            <div className="pl-3 pt-4">
+              <p className="font-sol text-3xl">200+</p>
+              <p className="text-lg">Donations Received</p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div>
+              <Image src={Logo2} alt={"logo - grup - 2"} />
+            </div>
+            <div className="pl-3 pt-4">
+              <p className="font-sol text-3xl">10+</p>
+              <p className="text-lg">Active Campaign</p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div>
+              <Image src={Logo3} alt={"logo - grup - 3"} />
+            </div>
+            <div className="pl-3 pt-4">
+              <p className="font-sol text-3xl">$60k</p>
+              <p className="text-lg">Money Donated</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
