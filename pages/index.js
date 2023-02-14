@@ -132,6 +132,35 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* our story */}
+      <div className="w-full px-20 py-28 grid grid-cols-2">
+        <div>
+          <p className="font-sol text-3xl">Our Story</p>
+          <p className="pt-10 pr-20 pb-16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <p className="font-sol text-2xl">
+            Save the <span className="text-[#CB654F]">Others</span>,
+          </p>
+          <p className="font-sol text-2xl">
+            Save The <span className="text-[#CB654F]">World</span>.
+          </p>
+        </div>
+        <div className="py-20 bg-[#DFBA47] ">
+          <div className="w-1/2 ">
+            <Image alt="Gambar 1" src={Gambar1} className="rounded-xl" />
+          </div>
+          <div className="w-1/2 pt-3">
+            <Image alt="Gambar 1" src={Gambar1} className="rounded-xl" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
