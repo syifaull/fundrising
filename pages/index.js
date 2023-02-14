@@ -21,11 +21,11 @@ export default function Home() {
       <div className="w-full min-h-min">
         <nav className=" border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <div className="w-36">
                 <Image alt="Logo" src={Logo} />
               </div>
-            </a>
+            </Link>
             <button
               data-collapse-toggle="navbar-default"
               type="button"
@@ -54,30 +54,30 @@ export default function Home() {
             >
               <ul className="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 bg-[#DFBA47]rounded md:bg-transparent md:hover:text-[#DFBA47] md:p-0 "
                     aria-current="page"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DFBA47] md:p-0 "
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DFBA47] md:p-0 "
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
           <div className="w-1/2 pl-20 pt-32">
             <p className="font-sol text-4xl">Safe Our World,</p>
             <p className="font-sol text-4xl">Be Kind to Others</p>
-            <p className="pt-2 pb-10">Let's be part of changes</p>
+            <p className="pt-2 pb-10">Let&apos;s be part of changes</p>
             <Link href="/form">
               <Button text="Donate Now!" />
             </Link>
