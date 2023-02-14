@@ -94,7 +94,12 @@ export default function Home() {
           </div>
           <div className="w-1/2 h-full bg-[#D3B1A7]">
             <div className="w-full pr-20 py-20 ">
-              <Image alt="Gambar 1" src={Gambar1} className="rounded-r-xl" />
+              <Image
+                alt="Gambar 1"
+                src={Gambar1}
+                className="rounded-r-xl"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -154,10 +159,20 @@ export default function Home() {
         </div>
         <div className="py-20 bg-[#DFBA47] ">
           <div className="w-1/2 ">
-            <Image alt="Gambar 1" src={Gambar1} className="rounded-xl" />
+            <Image
+              alt="Gambar 1"
+              src={Gambar1}
+              className="rounded-xl"
+              priority
+            />
           </div>
           <div className="w-1/2 pt-3">
-            <Image alt="Gambar 1" src={Gambar1} className="rounded-xl" />
+            <Image
+              alt="Gambar 1"
+              src={Gambar1}
+              className="rounded-xl"
+              priority
+            />
           </div>
         </div>
       </div>

@@ -138,10 +138,20 @@ const Form = () => {
       </div>
       <div className="w-full pb-10 md:w-1/3 bg-[#8CBEA3]">
         <div className="w-full md:pr-5 lg:pr-24 pt-24">
-          <Image src={Gambar1} alt="Gambar 1" className="rounded-r-xl" />
+          <Image
+            src={Gambar1}
+            alt="Gambar 1"
+            className="rounded-r-xl"
+            priority
+          />
         </div>
         <div className="w-full md:pr-5 lg:pr-24 pt-4">
-          <Image src={Gambar1} alt="Gambar 1" className="rounded-r-xl" />
+          <Image
+            src={Gambar1}
+            alt="Gambar 1"
+            className="rounded-r-xl"
+            priority
+          />
         </div>
       </div>
     </div>
